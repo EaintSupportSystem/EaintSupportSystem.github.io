@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    background-color: pink
+}
+.header h1 {
+    margin: 0;
+}
+.header p {
+    margin: 0;
+}
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+.kotak {
+    padding: 1px;
+    margin-bottom: 20px;
+}
+.container a {
+    display: block;
+}
+.satu {
+    background-color: aquamarine;
+}
+.dua {
+    background-color: antiquewhite;
+}
+.tiga {
+    background-color: bisque;
+}
+.empat {
+    background-color: lightcyan;
+}
+
+
+/* responsive */
+
+@media (min-width: 600px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .kotak {
+        width: 45%;
+    }
+}
