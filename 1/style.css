@@ -1,0 +1,40 @@
+body {
+    background-color: aquamarine !important;
+}
+
+img {
+    height: 300px;
+}
+.text {
+    height: 400px;
+}
+.comment1, .comment2, .comment3, .comment4, .comment5, .comment6 {
+    font-size: 36px;
+    position: absolute;
+    z-index: 2;
+    transform: translate(20px,90px);
+}
+.kotak1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+    border-radius: 20px;
+}
+.comment {
+    font-size: 36px;
+}
+
+.lanjut {
+    background-color: aliceblue;
+    margin-top: 10px;
+    height: 30px;
+    text-decoration: none;
+    transform: translate(0,5px);
+    font-size: 20px;
+}
+.next1:target .comment1 {
+    margin-right: 200px;
+} 
+.happy {
+    margin: auto;
+}

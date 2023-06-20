@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- local style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <section class="title text-center">
+        <div class="container1">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <br>
+                    <img src="../img/1.png" alt="Star">
+                </div>
+            </div>
+            <div class="row">
+                <img src="../img/text.png" alt="textbox" class="text">
+                <a href="#dua" class="lanjut">Click Here to Next</a>
+                <p class="comment1"></p>
+            </div>
+            <div class="row justify-content-center" id="dua">
+                <div class="col-lg-6">
+                    <br>
+                    <img src="../img/1.png" alt="Star">
+                </div>
+            </div>
+            <div class="row">
+                <img src="../img/text.png" alt="textbox" class="text">
+                <a href="#tiga" class="lanjut">Click Here to Next</a>
+                <p class="comment2"></p>
+            </div>
+            <div class="row justify-content-center" id="tiga">
+                <div class="col-lg-6">
+                    <br>
+                    <img src="../img/3.png" alt="Star">
+                </div>
+            </div>
+            <div class="row">
+                <img src="../img/text.png" alt="textbox" class="text">
+                <a href="#empat" class="lanjut">Click Here to Next</a>
+                <p class="comment3"></p>
+            </div>
+            <div class="row justify-content-center" id="empat">
+                <div class="col-lg-6">
+                    <br>
+                    <img src="../img/3.png" alt="Star">
+                </div>
+            </div>
+            <div class="row">
+                <img src="../img/text.png" alt="textbox" class="text">
+                <a href="#lima" class="lanjut">Click Here to Next</a>
+                <p class="comment4"></p>
+            </div>
+            <div class="row justify-content-center" id="lima">
+                <div class="col-lg-6">
+                    <br>
+                    <img src="../img/2.png" alt="Star">
+                </div>
+            </div>
+            <div class="row">
+                <img src="../img/text.png" alt="textbox" class="text">
+                <a href="#enam" class="lanjut">Click Here to Next</a>
+                <p class="comment5"></p>
+            </div>
+            <div class="row justify-content-center" id="enam">
+                <div class="col-lg-6">
+                    <br>
+                    <img src="../img/2.png" alt="Star">
+                </div>
+            </div>
+            <div class="row">
+                <img src="../img/text.png" alt="textbox" class="text">
+                <p class="comment6"></p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="kotak1">
+                    <p class="comment">Well i hope you not sad anymore after met those 3 rocky and finish it with a
+                        smile
+                        right now <i class="bi bi-emoji-laughing-fill"></i></p>
+                    <p class="comment">well maybe i'll teach straight forward rocky not to be too straight forward like
+                        that <i class="bi bi-emoji-neutral-fill"></i></p>
+                    <p class="comment">but i'm sure he said for your own good <i class="bi bi-emoji-laughing-fill"></i>,
+                        now click on happy picture below to
+                        back to homepage</p>
+                    <a href="../index.html" class="happy">
+                        <img src="../img/happy.png" alt="happy">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- JS from bootrstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/TextPlugin.min.js"></script>
+    <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.to('.lead', { duration: 1, delay: 0.1, text: 'Hi There' })
+        gsap.to('.comment1', { duration: 4, delay: 0.2, text: "Hello Nice to meet you my name is smiley rocky, I'm here to take your sadness away " })
+        gsap.to('.comment2', { duration: 4, delay: 5, text: 'How you ask? just look at my happy and cute face, you gonna smile as well <i class="bi bi-emoji-laughing-fill"></i>' })
+        gsap.to('.comment3', { duration: 4, delay: 10, text: "(another rocky break in) what? i guess you have a heartbreak? bah hear me out" })
+        gsap.to('.comment4', { duration: 4, delay: 15, text: "why you still sad? still hoping back to him? bahh don't be ridiculousla hoping for toxic man" })
+        gsap.to('.comment5', { duration: 4, delay: 20, text: "(3rd rocky break in) hi tian mey sorry for my brother 'straight-forward' rocky rudeness" })
+        gsap.to('.comment6', { duration: 4, delay: 25, text: "I'm playful rocky and hoping for your hapiness, stay happy with big smile, bye! bwee!!" })
+    </script>
+    <!-- akhir GSAP -->
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        const galleryImage = document.querySelectorAll('.gallery-image')
+
+        galleryImage.forEach((img, i) => {
+            img.dataset.aos = 'fade-down';
+            img.dataset.aosDuration = '1000';
+            img.dataset.aosDelay = i * 100;
+        })
+        AOS.init();
+    </script>
+    <!-- akhir AOS -->
+</body>
+
+</html>

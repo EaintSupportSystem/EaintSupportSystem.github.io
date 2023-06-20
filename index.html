@@ -1,33 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tian Mey's Assistant</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tian Mey Assistant</title>
     <link rel="stylesheet" href="style.css">
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="header">
+    <!-- title -->
+    <section class="title text-center">
         <h1>Hello ah Tiann!</h1>
-        <p>so</p>
-    </div>
-    <div class="container">
-        <a href="satu.html" class="kotak satu">
-            <h3>stress cos of work</h3>
-        </a>
-        <a href="dua.html" class="kotak dua">
-            <h3>feeling sad </h3>
-        </a>
-        <a href="tiga.html" class="kotak tiga">
-            <h3>hi</h3>
-        </a>
-        <a href="empat.html" class="kotak empat">
-            <h3>hi</h3>
-        </a>
-    </div>
+        <h1>Welcome to Tian Mey's Assistant!</h1>
+        <p>Nice to meet you Tian Mey, here i am ur static Support System! version 0.1.1 </p>
+        <p>I may not an artificial intelligence yet bcs my creator is not that bright you know </p>
+        <p>but my creator make me to be ur support system if u need anything
+            based on how you feel below!</p>
+    </section>
 
+    <!-- layanan -->
+    <section id="layanan">
+        <div class="container">
+            <div class="row  justify-content-center">
+                <div class="col-lg-4 mb-4">
+                    <div class="kotak1 justify-content-center">
+                        <h3 class="sad">Sad</h3>
+                        <img src="img/sad.png" alt="sad" class="sad-img">
+                        <a href="1/satu.html" class="btn btn-primary detail-button ">Jump In</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 ">
+                    <a href="2/dua.html" class="kotak2">
+                        <div class="tulisan">
+                            <h3>Happy</h3>
+                            <h3>(Coming Soon)</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <a href="3/tiga.html" class="kotak3">
+                        <div class="tulisan">
+                            <h3>Angry</h3>
+                            <h3>(Coming Soon)</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <a href="4/empat.html" class="kotak4">
+                        <div class="tulisan">
+                            <h3>Stress From Work</h3>
+                            <h3>(Coming Soon)</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <a href="5/lima.html" class="kotak5">
+                        <div class="tulisan">
+                            <h3>Many Others</h3>
+                            <h3>(Coming Soon)</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- BS JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- TILT JS -->
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".kotak1"), {
+            max: 25,
+            speed: 400,
+            glare: true
+        });
+    </script>
 </body>
 
 </html>

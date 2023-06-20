@@ -1,47 +1,106 @@
 body {
-    text-align: center;
-    background-color: pink
+    background-color: pink !important;
 }
-.header h1 {
-    margin: 0;
-}
-.header p {
-    margin: 0;
-}
-.container {
-    width: 80%;
-    margin: 50px auto;
-}
-.kotak {
-    padding: 1px;
+/* title */
+
+.title h1 {
     margin-bottom: 20px;
 }
-.container a {
-    display: block;
+.title p {
+    line-height:20px;
 }
-.satu {
+
+/* layanan */
+.row .col-lg-5{
+    margin-bottom: 50px;
+}
+.kotak1, .kotak2, .kotak3, .kotak4, .kotak5 {
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+    animation: fadedown 1s;
+}
+.kotak1 {
+    display: flex;
     background-color: aquamarine;
 }
-.dua {
-    background-color: antiquewhite;
+.kotak2 {
+    background-color: lightskyblue;
 }
-.tiga {
+.kotak3 {
     background-color: bisque;
 }
-.empat {
+.kotak4 {
     background-color: lightcyan;
 }
+.kotak5 {
+    background-color: lightseagreen;
+}
+#layanan a {
+    display: block;
+    color: lightcoral;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+}
+#layanan a:hover {
+   color: royalblue;
+}
+#layanan a .tulisan {
+    margin: auto;
+}
 
+/* layanan 1 */
+.sad {
+    color: lightcoral;
+    margin: auto;
+    transition: 0.6s;
+}
+.kotak1:hover .sad {
+    transform: translate3d(0,-170px,70px);
+}
+.sad-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 425px;
+    height: 275px;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 0.6s;
+}
+.kotak1:hover .sad-img {
+    opacity: 1;
+    transform: translate3d(-50%,-50%,50px) scale(1.2);
+}
+.btn.btn-primary.detail-button {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%,0);
+    opacity: 0;
+    transition: 0.6s;
+    z-index: 100;
+}
 
-/* responsive */
+.kotak1:hover .btn.btn-primary.detail-button {
+    transform: translate3d(-50%,0,70px);
+    bottom: 10px;
+    opacity: 1;
+}
+#layanan .kotak1 a {
+    color: white;
+}
 
-@media (min-width: 600px) {
-    .container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+/* animation */
+@keyframes fadedown {
+    0% {
+        opacity: 0;
+        margin-top: -50px;
     }
-    .kotak {
-        width: 45%;
+    100% {
+        opacity: 1;
+        margin: 0;
     }
 }
